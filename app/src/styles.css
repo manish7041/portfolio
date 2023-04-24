@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{margin: 0;
+padding: 0;} */
+.box{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 70px;
+    background-image: url(./assets/images/bg1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;background-position: center;
+    background-size: cover;
+}
+
+.allButton{
+ background-color: rgb(109, 8, 28);
+ font-size: 20px;
+ border:none;
+ padding: 5px;
+ position: relative;
+ box-sizing: border-box;
+ color: white;
+ border-radius: 5px;
+}
+
+.allButton:hover{
+    scale: 0.95;
+    transition: 0.1s;
+}
+
+.heading{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.sub{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(135, 15, 39);
+  
+}
+
+.active{
+
+  background-color:rgb(157, 19, 47);
+  border-radius: 15px;
+  /* color: rgb(245, 245, 245); */
+    
+}
+
+
+/* Responsive */
+.navCont{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 70px;
+    /* background-color: aqua; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+    padding: 5px;
+    background-color:whitesmoke;
+}
+
+.nav  a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px;
+    color: grey;
+ }
+ 
+ .nav  a:hover{
+     color: crimson;
+ }
+@media only screen and (max-width: 600px) {
+    .box {
+    width: auto;
+    height: max-content;
+    }
+    
+ 
+    
+  }

@@ -1,0 +1,113 @@
+.main-box{
+    display: block;
+
+    
+}
+.menu{
+    display: none;
+    position: absolute;
+    right: 30px;
+
+}
+.menu img:hover{
+    scale: 0.9;
+}
+.navigation{
+    display: flex;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    width: auto;
+    z-index: 10;
+    padding: 15px;
+    height: fit-content;
+    flex-direction: row;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+}
+
+.profile{
+   /* background-color: darkgoldenrod; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* left: -200px; */
+    gap: 12px;
+}
+.profile img{
+    border-radius: 50%;
+}
+.profile p{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.navlist-container{
+    position: absolute;
+    display: flex;
+    /* background-color: aqua; */
+    width: auto;
+    right:30px;
+    align-items: center;
+    box-sizing: border-box;
+    
+    
+}
+
+.navlist{
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    top: 9px;
+}
+
+.navlist  a{
+   font-size: 20px;
+   text-decoration: none;
+   padding: 12px;
+   color: grey;
+}
+
+.navlist  a:hover{
+    color: crimson;
+}
+
+.head{
+    position: relative;
+     top: 9px;
+
+}
+
+/* .social{
+    position: relative;
+
+} */
+button{
+    border: 2px solid rgb(164, 13, 43);
+    border-radius: 5px;
+    color: black;
+}
+
+
+button:hover{
+    background-color: rgb(146, 14, 40);
+    color: white;
+}
+
+
+@media only screen and (max-width:860px){
+
+    .navlist-container{
+        display: none;
+    }
+    .navlist{
+        display: none;
+    }
+    .profile p{
+        font-size: 18px;   
+    }
+    .menu{
+        display:block;
+    }
+}

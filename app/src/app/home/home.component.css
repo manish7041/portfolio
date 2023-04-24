@@ -1,0 +1,48 @@
+.home{
+  padding: 110px;
+}
+.greet{
+    color: rgb(133, 6, 31);
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.name{
+    font-family:monospace;
+    font-size: 90px;
+    font-weight: 600;
+}
+.subname{
+    font-family:monospace;
+    font-size: 70px;
+    opacity: 0.5;
+}
+
+.desc{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 20px;
+}
+span{
+    padding:0px 20px;
+}
+
+@media only  screen  and (max-width:860px){
+  .name{
+    font-size: 40px;
+  }  
+  .subname{
+    font-size: 30px;
+  }
+  .home{
+    padding: 70px;
+    align-self: center;
+  }
+  .subbox{
+
+line-height: 34vh;
+  }
+
+  .allButton{
+    top:40px
+  }
+} 

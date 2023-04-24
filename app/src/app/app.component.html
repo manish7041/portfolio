@@ -1,0 +1,52 @@
+<div class="main-box">
+  <div class="navigation">
+    <div class="profile">
+      <a routerLink=""><img src="../assets/images/mmm.JPG" width="50px" height="50"></a>
+      <p class="head">Manishkumar Rai</p>
+    </div>
+    <div class="menu">
+      <img src="/assets/images/menu.png" (click)="showMenu()" width="50px" alt="">
+    </div>
+    <div class="navlist-container" >
+      <ul class="navlist">
+        <li [routerLinkActive]="'active'"><a routerLink="Home">Home</a></li>
+        <li [routerLinkActive]="'active'"><a routerLink="About">About</a></li>
+        <li [routerLinkActive]="'active'"><a routerLink="Project">Project</a></li>
+        <li [routerLinkActive]="'active'"><a routerLink="Contact">Contact</a></li>
+        <li><a href="/assets/manish.pdf" target="_blank"><button>Resume</button></a></li>
+      </ul>
+    </div>
+    <div class="navCont" *ngIf="value">
+      <ul class="nav">
+        <li [routerLinkActive]="'active'"><a routerLink="Home">Home</a></li>
+        <li [routerLinkActive]="'active'"><a routerLink="About">About</a></li>
+        <li [routerLinkActive]="'active'"><a routerLink="Project">Project</a></li>
+        <li [routerLinkActive]="'active'"><a routerLink="Contact">Contact</a></li>
+        <li><a href="/assets/manish.pdf" target="_blank"><button>Resume</button></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="component-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div style=" display: flex; flex-direction: row; padding: 10px;width: auto;background-color:rgb(169, 25, 54); gap: 20%;">
+  <div style="width: 60%;color: rgb(252, 251, 251);">
+    <h3 style="text-decoration: underline;">Manish</h3>
+    <p style="font-family:cursive; color: black;">A Frontend focuse Web Developer specialize in building Websites and Web Application
+      that gives best user experience.</p>
+  </div>
+  <div class="Social">
+    <h3 style="color: rgb(252, 252, 252);text-decoration:underline;">Social</h3>
+    <div style="display: flex; flex-direction: row; gap: 30px;position: relative; right: 0px;">
+      <a target="_blank" href="https://www.linkedin.com/in/manishkumar-rai-b13278265
+        "><img width="20px" src="/assets/images/linkedin.png"></a>
+      <a target="_blank" href="https://github.com/manish7041"><img width="20px"
+          src="/assets/images/github-sign.png"></a>
+      <a target="_blank" href="https://app.netlify.com/teams/manish7041/overview"><img width="20px"
+          src="/assets/images/4691413_netlify_icon.png"></a>
+
+    </div>
+  </div>
+</div>

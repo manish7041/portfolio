@@ -1,0 +1,23 @@
+<div class="cont">
+        <p class="heading">Projects</p>
+        <p class="sub">Some thigs that I have built</p>
+  
+    <div class="con" *ngFor="let d of data">
+        <div class="boxOne">
+            <img [src]=d.pimg class="mainimg" >
+        </div>
+        <div class="boxTwo">
+            <p class="projecthead">{{d.type}}</p>
+            <p class="projectheadt">{{d.title}}</p>
+            <div class="projectDesc">
+                <p>{{d.descr}}</p>
+            </div>
+            <div class="projectLink">
+                <a target="_blank" [href]="d.llink"><img src="/assets/images/linkedin.png" width="25px"></a>
+                <a target="_blank" [href]="d.glink"><img src="/assets/images/github-sign.png" width="25px"></a>
+                <a target="_blank" [href]="d.nlink"><img src="/assets/images/4691413_netlify_icon.png" width="25px"></a>
+            </div>
+
+        </div>
+    </div>
+</div>

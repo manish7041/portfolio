@@ -1,0 +1,63 @@
+.descriptionbox{
+/* background-color: aqua; */
+display: flex;
+flex-direction: row;
+padding: 20px;
+margin: 0px 80px;
+gap: 10%;
+
+}
+
+.para{
+    position: relative;
+    top:30px;
+  color:rgb(78, 76, 76);
+  letter-spacing: 1px;
+}
+.dBoxOne{
+ display: block;
+ width: 50%;
+}
+.dBoxTwo{
+    display: block;
+    width:40%;
+   
+}
+
+.skills{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: brown; */
+    gap: 20px;
+}
+
+.skills span{
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(195, 186, 186);
+}
+
+
+@media only screen and (max-width: 600px){
+    .descriptionbox{
+        display: flex;
+        flex-direction:column;
+        padding: 20px;
+        margin: 0px 80px;
+        gap: 50px;
+    }
+    .dBoxOne{
+        display: block;
+        width:fit-content;
+        align-self: center;
+       }
+       .dBoxTwo{
+           display: block;
+           width:fit-content;
+           align-self: center;
+          
+       }
+}

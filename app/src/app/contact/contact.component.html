@@ -1,0 +1,24 @@
+<div appBox>
+    <p class="heading">Contact</p>
+    <p class="sub">Feel free to cantact me.</p>
+    <div class="formBox">
+        <form class="form">
+            <div class="labInp">
+              <label for="name">Name</label>
+              <input id="name" [(ngModel)]="value.name" name="name" placeholder="Enter your Name">
+            </div>
+          
+            <div class="labInp">
+              <label for="email">Email</label>
+              <input type="email" id="email" [(ngModel)]="value.email" name="email" placeholder="Enter your Email">
+            </div>
+          
+            <div class="labInp">
+              <label for="message">Message</label>
+              <textarea id="message" [(ngModel)]="value.message" name="message" rows="5" cols="40" style="resize: none;"></textarea>
+            </div>
+          
+            <button class="allButton" (click)="send(value)">Submit</button>
+          </form>
+    </div>
+</div>
